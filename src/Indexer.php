@@ -38,7 +38,7 @@ class Indexer {
         }
     }
 
-    public function getStrongIndex($string, $limit = 20): ?string
+    public function getStrongIndex($string, ?int $limit = 20): ?string
     {
         $words = $this->getWords($string);
         $filtered = $this->getWithoutStopwords($words);
